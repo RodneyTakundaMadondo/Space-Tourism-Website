@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base{
+    .custom-border{
+        position: relative;
+        margin-bottom: 5rem;
+    }
+    .custom-border::after{
+        position: absolute;
+        content: '';
+        height: 18rem;
+        width: 18rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        opacity: 0;
+        top:50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: -1;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .custom-border:hover::after{
+        opacity: 0.15;
+    }
+
+}
