@@ -1,38 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+    rel="stylesheet">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+<body class="bg-[url('/assets/destination/background-destination-mobile.jpg')] bg-no-repeat bg-cover min-h-screen">
+  <header class="pt-4 pb-6 px-6">
+    <nav class="flex justify-between">
+      <div class="h-10 w-10">
+        <img src="../assets/shared/logo.svg" alt="Home">
+      </div>
+      <button>
+        <img src="../assets/shared/icon-hamburger.svg" alt="">
+      </button>
+      <div class="hidden">
+        <button>
+          <img src="../assets/shared/icon-close.svg" alt="">
+        </button>
+        <ul>
+          <li>
+            <span>00</span>
+            home
+          </li>
+          <li>
+            <span>01</span>
+            destination
+          </li>
+          <li>
+            <span>02</span>
+            crew
+          </li>
+          <li>
+            <span>03</span>
+            technology
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div>
+        <p class="text-white text-center text-xl uppercase my-4"> <span
+            class="inline-block mr-4 text-tertiary">01</span> Pick your destination </p>
 
-  01 Pick your destination
+        <div class="mx-auto max-w-40 flex justify-center my-12">
+          <img class="block max-w-full" src="../assets/destination/image-europa.webp" alt="Europa">
+        </div>
 
-  Moon
-  Mars
-  Europa
-  Titan
+        <div>
+          <ul class="moons-ul">
+            <li>
+              <a href="./destination-moon.html" class="moon-links group">
+                Moon
+                <span class="moon-link-underline "></span>
+              </a>
+            </li>
+            <li>
+              <a href="./destination-mars.html" class="moon-links group">
+                Mars
+                <span class="moon-link-underline "></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="moon-links group">
+                Europa
+                <span class="moon-link-underline "></span>
+              </a>
+            </li>
+            <li>
+              <a href="./destination-titan.html" class="moon-links group">
+                Titan
+                <span class="moon-link-underline "></span>
+              </a>
+            </li>
+          </ul>
 
-  Europa
+          <h2 class="moon-name">Europa</h2>
 
-  The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
-  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
-  ice skating, curling, hockey, or simple relaxation in your snug 
-  wintery cabin.
+          <div class="moon-info">
+            <p class="text-secondary text-center ">
+              The smallest of the four Galilean moons orbiting
+              Jupiter, Europa is a winter lover’s dream. With an
+              icy surface, it’s perfect for a bit of ice skating,
+              curling, hockey, or simple relaxation in your snug
+              wintery cabin.
+            </p>
+          </div>
 
-  Avg. distance
-  628 mil. km
+          <div class="moon-distance-info">
+            <div class="text-white text-center">
+              <span class="block text-secondary mb-4 text-lg ">Avg. distance</span>
+              <span class="text-4xl font-serif">628 mil. km</span>
+            </div>
 
-  Est. travel time
-  3 years
+            <div class="text-white text-center">
+              <span class="block text-secondary mb-4 text-lg ">est. travel time</span>
+              <span class="text-4xl font-serif">3 years</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+ 
 </body>
+
 </html>

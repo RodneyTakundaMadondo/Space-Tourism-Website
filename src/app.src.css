@@ -25,5 +25,23 @@
     .custom-border:hover::after{
         opacity: 0.15;
     }
+    .moons-ul{
+        @apply text-secondary flex gap-10 flex-wrap justify-center uppercase my-11  w-[90%] mx-auto;
+    }
+    .moon-name{
+        @apply uppercase text-white text-center text-5xl font-serif my-5;
+    }
+    .moon-info{
+        @apply flex justify-center mx-auto  pb-8 w-[90%] max-w-[25rem] border-solid border-b-2 border-tertiary mt-7;
+    }
+    .moon-distance-info{
+        @apply flex flex-col items-center py-11 gap-8 uppercase;
+    }
+    .moon-links{
+        @apply relative block  h-[2.5rem];
+    }
+    .moon-link-underline{
+        @apply absolute bg-white bottom-[0rem] w-full  h-[2px] left-0  opacity-0 transition-all duration-300 group-hover:opacity-100 ;
+    }
 
 }

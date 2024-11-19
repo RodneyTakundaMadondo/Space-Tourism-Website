@@ -9,6 +9,7 @@ module.exports = {
       colors:{
         primary:"#0B0D17",
         secondary:"#D0D6F9",
+        tertiary:"#53555f",
       },
       fontFamily:{
         sans:["'Barlow Condensed'", 'sans-serif'],
