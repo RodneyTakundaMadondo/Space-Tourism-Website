@@ -10,7 +10,48 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
+  <header class="mt-4 mb-6 ">
+    <nav class=" relative">
+      <!-- nav we can see -->
+      <div class="flex justify-between px-6">
+        <div class="h-10 w-10">
+          <img src="../assets/shared/logo.svg" alt="Home">
+        </div>
+        <button class="hamburger-btn">
+          <img src="../assets/shared/icon-hamburger.svg" alt="">
+        </button>
+      </div>
+      <!-- end of nav we can see -->
 
+      <!-- nav that is hidden that has links -->
+      <div class="side-panel  min-h-[100vh] fixed top-0  right-0 w-[70%] transition-transform transform translate-x-full duration-300  z-10 bg-transparent backdrop-blur-3xl p-6">
+        <div class="flex mb-12  ">
+          <button class="close-btn ml-[auto]">
+            <img src="../assets/shared/icon-close.svg" alt="">
+          </button>
+        </div>
+        <ul class="flex flex-col gap-4 text-white">
+          <li class="uppercase flex gap-4">
+            <span class="font-bold tracking-widest">00</span>
+            <span class="tracking-widest"><a href="./index.html">home</a></span>
+          </li>
+          <li class="uppercase flex gap-4">
+            <span class="font-bold tracking-widest">01</span>
+            <span class="tracking-widest"><a href="./destination-moon.html">destination</a></span>
+          </li>
+          <li class="uppercase flex gap-4">
+            <span class="font-bold tracking-widest">02</span>
+            <span class="tracking-widest"><a href="./crew-commander.html">crew</a></span>
+          </li>
+          <li class="uppercase flex gap-4">
+            <span class="font-bold tracking-widest">03</span>
+            <span class="tracking-widest"><a href="./technology-capsule.html">technology</a></span>
+          </li>
+        </ul>
+      </div>
+      <!-- end of hidden nav with links -->
+    </nav>
+  </header>
   00 Home
   01 Destination
   02 Crew
@@ -25,5 +66,7 @@
   International Space Station. Glover is a commander in the U.S. Navy where 
   he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
   station systems flight engineer. 
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>

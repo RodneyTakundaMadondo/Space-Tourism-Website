@@ -4,6 +4,9 @@
 
 
 @layer base{
+    .titan{
+        background-image: url('/assets/destination/background-destination-mobile.jpg');
+    }
     .custom-border{
         position: relative;
         margin-bottom: 5rem;
