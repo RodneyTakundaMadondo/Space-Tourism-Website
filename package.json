@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.4.14"
+    "tailwindcss": "^3.4.15"
   },
   "name": "space-tourism-website-main",
   "description": "![Design preview for the Space tourism website coding challenge](./preview.jpg)",
@@ -100,7 +100,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-css": "tailwind -i ./src/app.src.css -o ./public/css/app.css -w"
+    "dev-css": "tailwindcss -i ./src/app.src.css -o ./public/css/app.css -w"
   },
   "keywords": [],
   "author": "",

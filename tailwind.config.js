@@ -3,6 +3,8 @@ module.exports = {
   content: [
     "./src/**/*.{html,js}",    
     "./public/**/*.html",
+    "./public/**/*.js",
+   
   ],
   theme: {
     extend: {
@@ -27,11 +29,15 @@ module.exports = {
         primary:"#0B0D17",
         secondary:"#D0D6F9",
         tertiary:"#53555f",
+        fourth:"#8f9095",
       },
       fontFamily:{
         sans:["'Barlow Condensed'", 'sans-serif'],
         serif:["'Bellefair'", 'serif'],
-      }
+      },
+      screens:{
+        smallTab:'430px',
+      },
     },
   },
   plugins: [],

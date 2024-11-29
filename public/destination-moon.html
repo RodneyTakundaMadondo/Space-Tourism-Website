@@ -18,30 +18,32 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body class="bg-DestinationMob bg-no-repeat bg-cover min-h-screen">
-  <header class="mt-4 mb-6 ">
-    <nav class=" relative">
+<body class="bg-DestinationMob bg-no-repeat bg-cover min-h-screen bg-fixed">
+  <header class="mt-4 mb-6 sm:mt-0  ">
+    <nav class=" relative sm:flex sm:justify-center sm:items-center ">
       <!-- nav we can see -->
       <div class="flex justify-between px-6">
         <div class="h-10 w-10">
           <img src="../assets/shared/logo.svg" alt="Home">
         </div>
-        <button class="hamburger-btn">
+        <button class="hamburger-btn sm:hidden">
           <img src="../assets/shared/icon-hamburger.svg" alt="">
         </button>
       </div>
       <!-- end of nav we can see -->
 
       <!-- nav that is hidden that has links -->
-      <div class="side-panel  min-h-[100vh] fixed top-0  right-0 w-[70%] transition-transform transform translate-x-full duration-300  z-10 bg-transparent backdrop-blur-3xl p-6">
-        <div class="flex mb-12  ">
-          <button class="close-btn ml-[auto]">
+      <div class=" side-panel shared-side-panel">
+        <div class="flex mb-12 sm:hidden ">
+
+          <button class="close-btn ml-[auto] ">
             <img src="../assets/shared/icon-close.svg" alt="">
           </button>
         </div>
-        <ul class="flex flex-col gap-4 text-white">
-          <li class="uppercase flex gap-4">
-            <span class="font-bold tracking-widest">00</span>
+
+        <ul class="flex flex-col gap-4 text-white sm:flex-row flex-wrap">
+          <li class="uppercase flex  gap-4">
+            <span class="font-bold tracking-widest smallTab:hidden">00</span>
             <span class="tracking-widest"><a href="./index.html">home</a></span>
           </li>
           <li class="uppercase flex gap-4">
@@ -54,7 +56,7 @@
           </li>
           <li class="uppercase flex gap-4">
             <span class="font-bold tracking-widest">03</span>
-            <span class="tracking-widest"><a href="./technology-capsule.html">technology</a></span>
+            <span class="tracking-widest"><a href="./technology-vehicle.html">technology</a></span>
           </li>
         </ul>
       </div>
@@ -67,68 +69,51 @@
         <p class="text-white text-center text-xl uppercase my-4"> <span
             class="inline-block mr-4 text-tertiary">01</span> Pick your destination </p>
 
-        <div class="mx-auto max-w-40 flex justify-center my-12">
-          <img class="block max-w-full" src="../assets/destination/image-moon.webp" alt="Moon">
+        <div class="celestial-pic mx-auto max-w-40 flex justify-center my-12">
+         
         </div>
 
         <div>
           <ul class="moons-ul">
             <li>
-              <a href="#" class="moon-links group">
+              <a href="#" data-id="Moon" class="moon-links group">
                 Moon
                 <span class="moon-link-underline  "></span>
               </a>
             </li>
             <li >
-              <a href="./destination-mars.html" class="moon-links group">
+              <a href="#" data-id="Mars" class="moon-links group">
                 Mars
                 <span class="moon-link-underline"></span>
               </a>
             </li>
             <li>
-              <a href="./destination-europa.html" class="moon-links group">
+              <a href="#" data-id="Europa" class="moon-links group">
                 Europa
                 <span class="moon-link-underline "></span>
               </a>
             </li>
             <li>
-              <a href="./destination-titan.html" class="moon-links group">
+              <a href="#" data-id="Titan" class="moon-links group">
                 Titan
                 <span class="moon-link-underline"></span>
               </a>
             </li>
           </ul>
 
-          <h2 class="moon-name">Moon</h2>
+         <div class="information">
+         
 
-          <div class="moon-info">
-            <p class="text-secondary text-center ">
-              See our planet as you’ve never seen it before. A
-              perfect relaxing trip away to help regain perspective and come back refreshed. While
-              you’re there, take in some history by visiting the
-              Luna 2 and Apollo 11 landing sites.
-            </p>
-          </div>
-
-          <div class="moon-distance-info">
-            <div class="text-white text-center">
-              <span class="block text-secondary mb-4 text-lg ">Avg. distance</span>
-              <span class="text-4xl font-serif">384,400 km</span>
-            </div>
-
-            <div class="text-white text-center">
-              <span class="block text-secondary mb-4 text-lg ">est. travel time</span>
-              <span class="text-4xl font-serif">3 days</span>
-            </div>
-          </div>
+         </div>
 
         </div>
       </div>
     </section>
     
   </main>
-  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./js/index.js"></script>
 </body>
 
 </html>
+
+Is there a way to 

@@ -4,18 +4,19 @@
 
 
 @layer base{
-    .titan{
-        background-image: url('/assets/destination/background-destination-mobile.jpg');
+    .shared-side-panel{
+        @apply sm:flex sm:items-center sm:basis-3/4 sm:justify-center  h-screen min-h-full sm:h-[5rem] fixed sm:relative top-0  right-0 min-w-[70%] smallTab:min-w-[40%] sm:w-auto transition-transform transform sm:transform-none translate-x-full sm:translate-x-0 duration-300  z-10 bg-transparent backdrop-blur-3xl p-6 sm:p-1 ;
     }
     .custom-border{
         position: relative;
         margin-bottom: 5rem;
+        
     }
     .custom-border::after{
         position: absolute;
         content: '';
-        height: 18rem;
-        width: 18rem;
+        height: 10rem;
+        width: 10rem;
         background-color: rgb(255, 255, 255);
         border-radius: 50%;
         opacity: 0;
@@ -23,7 +24,14 @@
         left: 50%;
         translate: -50% -50%;
         z-index: -1;
-        transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.7s ease-in-out;
+    }
+    @media (min-width:300px){
+        .custom-border::after{
+            height: 15rem;
+            width: 15rem;
+         
+        }
     }
     .custom-border:hover::after{
         opacity: 0.15;

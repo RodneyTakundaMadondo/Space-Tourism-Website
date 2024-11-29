@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="./css/app.css" as="style" />
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+    rel="stylesheet">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
-  <header class="mt-4 mb-6 ">
-    <nav class=" relative">
+
+<body class=" relative bg-CrewMob bg-no-repeat bg-cover bg-center min-h-screen bg-fixed">
+  <div class="absolute min-h-screen min-w-full top-0 -z-10 backdrop-blur-sm"></div>
+  <header class="mt-4 mb-6 sm:mt-0  ">
+    <nav class=" relative sm:flex sm:justify-center sm:items-center ">
       <!-- nav we can see -->
       <div class="flex justify-between px-6">
         <div class="h-10 w-10">
           <img src="../assets/shared/logo.svg" alt="Home">
         </div>
-        <button class="hamburger-btn">
+        <button class="hamburger-btn sm:hidden">
           <img src="../assets/shared/icon-hamburger.svg" alt="">
         </button>
       </div>
       <!-- end of nav we can see -->
 
       <!-- nav that is hidden that has links -->
-      <div class="side-panel  min-h-[100vh] fixed top-0  right-0 w-[70%] transition-transform transform translate-x-full duration-300  z-10 bg-transparent backdrop-blur-3xl p-6">
-        <div class="flex mb-12  ">
-          <button class="close-btn ml-[auto]">
+      <div class=" side-panel shared-side-panel ">
+        <div class="flex mb-12 sm:hidden ">
+
+          <button class="close-btn ml-[auto] ">
             <img src="../assets/shared/icon-close.svg" alt="">
           </button>
         </div>
-        <ul class="flex flex-col gap-4 text-white">
-          <li class="uppercase flex gap-4">
-            <span class="font-bold tracking-widest">00</span>
+
+        <ul class="flex flex-col gap-4 text-white sm:flex-row flex-wrap">
+          <li class="uppercase flex  gap-4">
+            <span class="font-bold tracking-widest smallTab:hidden">00</span>
             <span class="tracking-widest"><a href="./index.html">home</a></span>
           </li>
           <li class="uppercase flex gap-4">
@@ -45,27 +57,39 @@
           </li>
           <li class="uppercase flex gap-4">
             <span class="font-bold tracking-widest">03</span>
-            <span class="tracking-widest"><a href="./technology-capsule.html">technology</a></span>
+            <span class="tracking-widest"><a href="./technology-vehicle.html">technology</a></span>
           </li>
         </ul>
       </div>
       <!-- end of hidden nav with links -->
     </nav>
   </header>
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <main>
+    <section class="py-6">
+      <div>
+        <p class="text-white text-center text-lg uppercase my-4 pb-8 tracking-widest">
+          <span class="inline-block mr-4 text-tertiary">02</span>
+          Meet your crew
+        </p>
+       <div class="crew-data">
+        <div class="pre-pag"></div>
 
-  02 Meet your crew
+        <div class="flex justify-center pt-8 gap-4 mb-8">
+          <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
+          <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
+          <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
+          <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
+        </div>
+        <div class="post-pag"></div>
 
-  Commander
-  Douglas Hurley
+       </div>
+      </div>
+    </section>
+  </main>
 
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2.
-  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+
   <script src="./js/index.js"></script>
 </body>
+
 </html>
