@@ -18,8 +18,8 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body class=" relative bg-CrewMob bg-no-repeat bg-cover bg-center min-h-screen bg-fixed">
-  <div class="absolute min-h-screen min-w-full top-0 -z-10 backdrop-blur-sm"></div>
+<body class=" relative bg-CrewMob sm:bg-CrewTab bg-no-repeat bg-cover bg-center min-h-screen bg-fixed">
+  <div class="fixed min-h-screen min-w-full top-0 -z-10 backdrop-blur-sm"></div>
   <header class="mt-4 mb-6 sm:mt-0  ">
     <nav class=" relative sm:flex sm:justify-center sm:items-center ">
       <!-- nav we can see -->
@@ -34,7 +34,7 @@
       <!-- end of nav we can see -->
 
       <!-- nav that is hidden that has links -->
-      <div class=" side-panel shared-side-panel ">
+      <div class=" side-panel shared-side-panel bg-[#232530]">
         <div class="flex mb-12 sm:hidden ">
 
           <button class="close-btn ml-[auto] ">
@@ -43,19 +43,19 @@
         </div>
 
         <ul class="flex flex-col gap-4 text-white sm:flex-row flex-wrap">
-          <li class="uppercase flex  gap-4">
+          <li class="uppercase flex  gap-4 sm:gap-2">
             <span class="font-bold tracking-widest smallTab:hidden">00</span>
-            <span class="tracking-widest"><a href="./index.html">home</a></span>
+            <span class="tracking-widest"><a href="../index.html">home</a></span>
           </li>
-          <li class="uppercase flex gap-4">
+          <li class="uppercase flex gap-4 sm:gap-2">
             <span class="font-bold tracking-widest">01</span>
             <span class="tracking-widest"><a href="./destination-moon.html">destination</a></span>
           </li>
-          <li class="uppercase flex gap-4">
+          <li class="uppercase flex gap-4 sm:gap-2">
             <span class="font-bold tracking-widest">02</span>
             <span class="tracking-widest"><a href="./crew-commander.html">crew</a></span>
           </li>
-          <li class="uppercase flex gap-4">
+          <li class="uppercase flex gap-4 sm:gap-2">
             <span class="font-bold tracking-widest">03</span>
             <span class="tracking-widest"><a href="./technology-vehicle.html">technology</a></span>
           </li>
@@ -65,10 +65,10 @@
     </nav>
   </header>
   <main>
-    <section class="py-6">
+    <section class="">
       <div>
-        <p class="text-white text-center text-lg uppercase my-4 pb-8 tracking-widest">
-          <span class="inline-block mr-4 text-tertiary">02</span>
+        <p class="text-white text-center text-lg uppercase my-4 pb-8 tracking-widest sm:text-start sm:ml-20 sm:mt-8 sm:text-xl ">
+          <span class="inline-block mr-4 text-tertiary font-bold">02</span>
           Meet your crew
         </p>
        <div class="crew-data">

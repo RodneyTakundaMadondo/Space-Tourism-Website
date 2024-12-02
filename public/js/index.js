@@ -168,19 +168,19 @@ function displayCrew(array, index) {
   // let crewArray 
   let prePagData = `
 <h2 class="text-center ">
-      <span class="block text-fourth text-xl font-serif uppercase mb-2">${array[index].role}</span>
-      <span class="text-white font-serif uppercase text-2xl">${array[index].name}</span>
+      <span class="block text-fourth text-xl sm:text-2xl font-serif uppercase mb-2">${array[index].role}</span>
+      <span class="text-white font-serif uppercase text-2xl sm:text-3xl">${array[index].name}</span>
     </h2>
-    <p class="text-center px-2 text-secondary my-8 max-w-[18rem] mx-auto">
+    <p class="text-center  px-2 text-secondary my-8 max-w-[18rem] mx-auto sm:max-w-xl sm:text-xl">
       ${array[index].bio}
     </p>
 `
   let postPagData = `
     <div class=" relative flex justify-center ">
-      <div class="max-w-[12rem] h-50">
+      <div class="max-w-[12rem] sm:max-w-xs h-50">
         <img class="block max-w-full" src=".${array[index].images.png}" alt="">
       </div>
-      <div class="absolute bottom-0 left-0 w-full h-[3rem] bg-gradient-to-b from-transparent to-black "></div>
+      <div class="absolute bottom-0 left-0 w-full h-[3rem] bg-gradient-to-b from-transparent to-black sm:hidden "></div>
     </div>
 `
   try {
@@ -198,38 +198,22 @@ function displayCrew(array, index) {
 }
 function displayTechInfo(array, index) {
 
-  let image =array[index].images.landscape.slice(1) ;
-  let desktopImg = array[index].images.portrait.slice(1);
+  let image =array[index].images.landscape.slice(1) ; // this is for the landscape images for the mobile and tab design
+  let desktopImg = array[index].images.portrait.slice(1);// this is that portrait image shown in desktop
 
   // 
-  console.log(image);
-  let techPicture;
-  if (index == 0) {
-    techPicture = `
-   <img
-   srcset="${image} 768w, ${desktopImg} 1440w"
-   sizes="(max-width: 768px) 100vw, (min-width: 769px) 100vw"
-   src="..${image}" class="block max-w-full text-center">
- `;
-  } else if (index == 1) {
-    techPicture = `
-   <img
-   srcset="${image} 768w, ${desktopImg} 1440w"
-   sizes="(max-width: 768px) 100vw, (min-width: 769px) 100vw"
-   src="..${image}" class="w-full h-full object-contain object-center">
- `;
-  } else {
-    techPicture = `
-   <img
-   srcset="${image} 768w, ${desktopImg} 1440w"
-   sizes="(max-width: 768px) 100vw, (min-width: 769px) 100vw"
-   src="..${image}" class="w-full h-full object-contain object-center">
- `;
-  }
+  let techPicture  = `
+  <picture class="w-full h-full object-contain">
+  <source media="(max-width: 640px)" srcset="${image}" >
+  <source media="(min-width: 768px)" srcset="${desktopImg}" >
+  <img src="${image}" class="w-full h-full object-contain" alt="Space Image">
+  </picture>
+`;// this makes images responsive for us to change at different screen sizes
+
   let techDescription = `
-   <h1 class="text-tertiary text-center text-xl uppercase font-serif">The terminology...</h1>
-            <h2 class="text-center text-white uppercase text-2xl font-serif">${array[index].name}</h2>
-            <p class="text-secondary text-center max-w-80 p-4">
+   <h1 class="text-tertiary text-center text-xl uppercase font-serif sm:text-2xl">The terminology...</h1>
+            <h2 class="text-center text-white uppercase text-2xl  font-serif sm:text-4xl">${array[index].name}</h2>
+            <p class="text-secondary text-center max-w-80  p-4 sm:max-w-[28rem] sm:p-0 sm:text-lg font-extralight">
                 ${array[index].description}
             </p>
  `

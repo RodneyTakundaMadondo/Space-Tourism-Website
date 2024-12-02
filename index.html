@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
-  <link rel="preload" href="./css/app.css" as="style" />
-  <link rel="stylesheet" href="./css/app.css">
+  <link rel="preload" href="./public/css/app.css" as="style" />
+  <link rel="stylesheet" href="./public/css/app.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body class="bg-HomeMob bg-no-repeat bg-cover bg-center bg-fixed min-h-full">
+<body class="bg-HomeMob sm:bg-HomeTab bg-no-repeat bg-cover bg-center bg-fixed min-h-full">
 
   <header class="mt-4 mb-6 sm:mt-0  ">
     <nav class=" relative sm:flex sm:justify-center sm:items-center ">
@@ -35,7 +35,7 @@
       <!-- end of nav we can see -->
 
       <!-- nav that is hidden that has links -->
-      <div class="side-panel shared-side-panel">
+      <div class="side-panel shared-side-panel bg-[#181a25]">
         <div class="flex mb-12 sm:hidden ">
 
           <button class="close-btn ml-[auto] ">
@@ -43,22 +43,22 @@
           </button>
         </div>
 
-        <ul class="flex flex-col gap-4 text-white sm:flex-row flex-wrap">
-          <li class="uppercase flex  gap-4">
+        <ul class="flex flex-col gap-4 text-white sm:flex-row sm:gap-6 flex-wrap">
+          <li class="uppercase flex  gap-4 sm:gap-2">
             <span class="font-bold tracking-widest smallTab:hidden">00</span>
-            <span class="tracking-widest"><a href="./index.html">home</a></span>
+            <span class="tracking-widest"><a class="" href="./index.html">home</a></span>
           </li>
-          <li class="uppercase flex gap-4">
+          <li class="uppercase flex gap-4 sm:gap-2">
             <span class="font-bold tracking-widest">01</span>
-            <span class="tracking-widest"><a href="./destination-moon.html">destination</a></span>
+            <span class="tracking-widest"><a class="" href="./public/destination-moon.html">destination</a></span>
           </li>
-          <li class="uppercase flex gap-4">
+          <li class="uppercase flex gap-4 sm:gap-2">
             <span class="font-bold tracking-widest">02</span>
-            <span class="tracking-widest"><a href="./crew-commander.html">crew</a></span>
+            <span class="tracking-widest"><a class="" href="./public/crew-commander.html">crew</a></span>
           </li>
-          <li class="uppercase flex gap-4">
+          <li class="uppercase flex gap-4 sm:gap-2">
             <span class="font-bold tracking-widest">03</span>
-            <span class="tracking-widest"><a href="./technology-vehicle.html">technology</a></span>
+            <span class="tracking-widest"><a class="" href="./public/technology-vehicle.html">technology</a></span>
           </li>
         </ul>
       </div>
@@ -83,7 +83,7 @@
         </p>
 
        <div>
-        <button onclick="window.location.href='./destination-moon.html'" class=" custom-border rounded-full bg-white text-primary block h-28 w-28 smallTab:h-36 smallTab:w-36 text-xl uppercase tracking-wider mx-auto  hover:text-opacity-55   ">
+        <button onclick="window.location.href='./public/destination-moon.html'" class=" custom-border rounded-full bg-white text-primary block h-28 w-28 smallTab:h-36 smallTab:w-36 text-xl uppercase tracking-wider mx-auto  hover:text-opacity-55   ">
           explore
         </button>
        </div>
@@ -92,7 +92,7 @@
     </section>
   </main>
 
-  <script src="./js/index.js"></script>
+  <script src="./public/js/index.js"></script>
 </body>
 
 </html>

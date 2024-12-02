@@ -18,7 +18,7 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body class="bg-DestinationMob bg-no-repeat bg-cover min-h-screen bg-fixed">
+<body class="bg-DestinationMob sm:bg-DestinationTab bg-no-repeat bg-cover min-h-screen bg-fixed">
   <header class="mt-4 mb-6 sm:mt-0  ">
     <nav class=" relative sm:flex sm:justify-center sm:items-center ">
       <!-- nav we can see -->
@@ -33,7 +33,7 @@
       <!-- end of nav we can see -->
 
       <!-- nav that is hidden that has links -->
-      <div class=" side-panel shared-side-panel">
+      <div class=" side-panel shared-side-panel bg-[#232530]">
         <div class="flex mb-12 sm:hidden ">
 
           <button class="close-btn ml-[auto] ">
@@ -41,24 +41,25 @@
           </button>
         </div>
 
-        <ul class="flex flex-col gap-4 text-white sm:flex-row flex-wrap">
-          <li class="uppercase flex  gap-4">
+        <ul class="flex flex-col gap-4 text-white sm:gap-6 sm:flex-row flex-wrap">
+          <li class="uppercase flex  gap-4 sm:gap-2">
             <span class="font-bold tracking-widest smallTab:hidden">00</span>
-            <span class="tracking-widest"><a href="./index.html">home</a></span>
+            <span class="tracking-widest"><a href="../index.html">home</a></span>
           </li>
-          <li class="uppercase flex gap-4">
+          <li class="uppercase flex gap-4 sm:gap-2">
             <span class="font-bold tracking-widest">01</span>
             <span class="tracking-widest"><a href="./destination-moon.html">destination</a></span>
           </li>
-          <li class="uppercase flex gap-4">
+          <li class="uppercase flex gap-4 sm:gap-2">
             <span class="font-bold tracking-widest">02</span>
             <span class="tracking-widest"><a href="./crew-commander.html">crew</a></span>
           </li>
-          <li class="uppercase flex gap-4">
+          <li class="uppercase flex gap-4 sm:gap-2">
             <span class="font-bold tracking-widest">03</span>
             <span class="tracking-widest"><a href="./technology-vehicle.html">technology</a></span>
           </li>
         </ul>
+
       </div>
       <!-- end of hidden nav with links -->
     </nav>
@@ -66,10 +67,10 @@
   <main>
     <section>
       <div>
-        <p class="text-white text-center text-xl uppercase my-4"> <span
+        <p class="text-white text-center sm:text-start sm:ml-20 sm:mt-8  text-xl uppercase my-4"> <span
             class="inline-block mr-4 text-tertiary">01</span> Pick your destination </p>
 
-        <div class="celestial-pic mx-auto max-w-40 flex justify-center my-12">
+        <div class="celestial-pic mx-auto max-w-40 sm:max-w-72 flex justify-center my-12">
          
         </div>
 
