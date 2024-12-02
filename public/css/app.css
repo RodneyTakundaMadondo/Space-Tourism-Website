@@ -982,19 +982,19 @@ video {
 }
 
 .bg-CrewMob {
-  background-image: url('assets/crew/background-crew-mobile.jpg');
+  background-image: url('/assets/crew/background-crew-mobile.jpg');
 }
 
 .bg-DestinationMob {
-  background-image: url('assets/destination/background-destination-mobile.jpg');
+  background-image: url('/assets/destination/background-destination-mobile.jpg');
 }
 
 .bg-HomeMob {
-  background-image: url('assets/home/background-home-mobile.jpg');
+  background-image: url('/assets/home/background-home-mobile.jpg');
 }
 
 .bg-TechnologyMob {
-  background-image: url('assets/technology/background-technology-mobile.jpg');
+  background-image: url('/assets/technology/background-technology-mobile.jpg');
 }
 
 .bg-gradient-to-b {
@@ -1271,19 +1271,19 @@ video {
   }
 
   .sm\:bg-CrewTab {
-    background-image: url('assets/crew/background-crew-tablet.jpg');
+    background-image: url('/assets/crew/background-crew-tablet.jpg');
   }
 
   .sm\:bg-DestinationTab {
-    background-image: url('assets/destination/background-destination-tablet.jpg');
+    background-image: url('/assets/destination/background-destination-tablet.jpg');
   }
 
   .sm\:bg-HomeTab {
-    background-image: url('assets/home/background-home-tablet.jpg');
+    background-image: url('/assets/home/background-home-tablet.jpg');
   }
 
   .sm\:bg-TechnologyTab {
-    background-image: url('assets/technology/background-technology-tablet.jpg');
+    background-image: url('/assets/technology/background-technology-tablet.jpg');
   }
 
   .sm\:p-0 {
