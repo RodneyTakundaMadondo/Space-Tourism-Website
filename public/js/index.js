@@ -44,9 +44,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     displayTechInfo(technology, 0)
 
 
-
-
-
     //crew buttons
     //make first crew page pagination button white
     if (window.location.toString().includes("crew")) {
@@ -81,15 +78,9 @@ window.addEventListener("DOMContentLoaded", async () => {
       })
     })
 
-
-
-
-
-
-
   }
   catch (error) {
-    console.log("error fetching data");
+    console.log(error);
   }
 
 
@@ -193,7 +184,7 @@ function displayCrew(array, index) {
 
   }
   catch (error) {
-    console.log("error updating crewData");
+    console.log(error);
   }
 }
 function displayTechInfo(array, index) {
