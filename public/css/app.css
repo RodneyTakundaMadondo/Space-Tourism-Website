@@ -948,14 +948,6 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border {
-  border-width: 1px;
-}
-
 .border-solid {
   border-style: solid;
 }
@@ -963,16 +955,6 @@ video {
 .border-tertiary {
   --tw-border-opacity: 1;
   border-color: rgb(83 85 95 / var(--tw-border-opacity, 1));
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
-}
-
-.border-red-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(248 113 113 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#181a25\] {
@@ -1000,19 +982,19 @@ video {
 }
 
 .bg-CrewMob {
-  background-image: url('/assets/crew/background-crew-mobile.jpg');
+  background-image: url('assets/crew/background-crew-mobile.jpg');
 }
 
 .bg-DestinationMob {
-  background-image: url('/assets/destination/background-destination-mobile.jpg');
+  background-image: url('assets/destination/background-destination-mobile.jpg');
 }
 
 .bg-HomeMob {
-  background-image: url('/assets/home/background-home-mobile.jpg');
+  background-image: url('assets/home/background-home-mobile.jpg');
 }
 
 .bg-TechnologyMob {
-  background-image: url('/assets/technology/background-technology-mobile.jpg');
+  background-image: url('assets/technology/background-technology-mobile.jpg');
 }
 
 .bg-gradient-to-b {
@@ -1116,10 +1098,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-light {
-  font-weight: 300;
 }
 
 .font-extralight {
@@ -1256,8 +1234,8 @@ video {
     max-width: 18rem;
   }
 
-  .sm\:max-w-screen-md {
-    max-width: 768px;
+  .sm\:max-w-\[28rem\] {
+    max-width: 28rem;
   }
 
   .sm\:max-w-xl {
@@ -1266,26 +1244,6 @@ video {
 
   .sm\:max-w-xs {
     max-width: 20rem;
-  }
-
-  .sm\:max-w-0 {
-    max-width: 0px;
-  }
-
-  .sm\:max-w-md {
-    max-width: 28rem;
-  }
-
-  .sm\:max-w-sm {
-    max-width: 24rem;
-  }
-
-  .sm\:max-w-lg {
-    max-width: 32rem;
-  }
-
-  .sm\:max-w-\[28rem\] {
-    max-width: 28rem;
   }
 
   .sm\:flex-row {
@@ -1313,19 +1271,19 @@ video {
   }
 
   .sm\:bg-CrewTab {
-    background-image: url('/assets/crew/background-crew-tablet.jpg');
+    background-image: url('assets/crew/background-crew-tablet.jpg');
   }
 
   .sm\:bg-DestinationTab {
-    background-image: url('/assets/destination/background-destination-tablet.jpg');
+    background-image: url('assets/destination/background-destination-tablet.jpg');
   }
 
   .sm\:bg-HomeTab {
-    background-image: url('/assets/home/background-home-tablet.jpg');
+    background-image: url('assets/home/background-home-tablet.jpg');
   }
 
   .sm\:bg-TechnologyTab {
-    background-image: url('/assets/technology/background-technology-tablet.jpg');
+    background-image: url('assets/technology/background-technology-tablet.jpg');
   }
 
   .sm\:p-0 {
@@ -1346,14 +1304,14 @@ video {
     line-height: 2.25rem;
   }
 
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .sm\:text-8xl {
     font-size: 6rem;
     line-height: 1;
-  }
-
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .sm\:text-lg {
@@ -1361,9 +1319,9 @@ video {
     line-height: 1.75rem;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
