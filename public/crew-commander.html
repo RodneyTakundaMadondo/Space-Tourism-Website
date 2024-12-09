@@ -17,71 +17,108 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body class=" relative bg-CrewMob sm:bg-CrewTab bg-no-repeat bg-cover bg-center min-h-screen bg-fixed">
+<body class=" relative bg-CrewMob sm:bg-CrewTab md:bg-CrewDes bg-no-repeat bg-cover bg-center min-h-screen bg-fixed">
   <div class="fixed min-h-screen min-w-full top-0 -z-10 backdrop-blur-sm"></div>
   <header class="mt-4 mb-6 sm:mt-0  ">
-    <nav class=" relative sm:flex sm:justify-center sm:items-center ">
+    <nav class="shared-nav ">
       <!-- nav we can see -->
       <div class="flex justify-between px-6">
         <div class="h-10 w-10">
-          <img src="../assets/shared/logo.svg" alt="Home">
+          <a href="/index.html">
+            <img src="/assets/shared/logo.svg" alt="Home">
+          </a>
         </div>
         <button class="hamburger-btn sm:hidden">
-          <img src="../assets/shared/icon-hamburger.svg" alt="">
+          <img src="/assets/shared/icon-hamburger.svg" alt="">
         </button>
       </div>
       <!-- end of nav we can see -->
+      <!-- white line separator -->
+      <div class="h-[1px] relative z-40 -mr-5 bg-tertiary basis-2/4 hidden md:block text-white">
 
+      </div>
+      <!-- end of white line separator -->
       <!-- nav that is hidden that has links -->
-      <div class=" side-panel shared-side-panel bg-[#232530]">
+      <div class="side-panel shared-side-panel sm:bg-[#181a25] md:bg-transparent md:backdrop-blur-3xl ">
         <div class="flex mb-12 sm:hidden ">
 
           <button class="close-btn ml-[auto] ">
-            <img src="../assets/shared/icon-close.svg" alt="">
+            <img src="/assets/shared/icon-close.svg" alt="">
           </button>
         </div>
 
-        <ul class="flex flex-col gap-4 text-white sm:flex-row flex-wrap">
-          <li class="uppercase flex  gap-4 sm:gap-2">
-            <span class="font-bold tracking-widest smallTab:hidden">00</span>
-            <span class="tracking-widest"><a href="/index.html">home</a></span>
+        <ul class="shared-ul">
+          <li class="uppercase relative  ">
+            <span class="tracking-widest  ">
+              <a class="group nav-links  " href="/index.html">
+                <span class="font-bold tracking-widest smallTab:hidden mr-[0.5rem]">00</span>
+                home
+                <span class="navigation-underline"></span>
+              </a>
+            </span>
           </li>
-          <li class="uppercase flex gap-4 sm:gap-2">
-            <span class="font-bold tracking-widest">01</span>
-            <span class="tracking-widest"><a href="./destination-moon.html">destination</a></span>
+
+          <li class="uppercase relative">
+
+            <span class="tracking-widest">
+              <a class="group nav-links w-full" href="/public/destination-moon.html">
+                <span class="font-bold tracking-widest mr-[0.5rem]">01</span>
+                destination
+                <span class="navigation-underline"></span>
+              </a>
+            </span>
           </li>
-          <li class="uppercase flex gap-4 sm:gap-2">
-            <span class="font-bold tracking-widest">02</span>
-            <span class="tracking-widest"><a href="./crew-commander.html">crew</a></span>
+          <li class="uppercase relative">
+
+            <span class="tracking-widest">
+              <a class="group nav-links w-full" href="/public/crew-commander.html">
+                <span class="font-bold tracking-widest mr-[0.5rem]">02</span>
+                crew
+                <span class="navigation-underline"></span>
+              </a>
+            </span>
           </li>
-          <li class="uppercase flex gap-4 sm:gap-2">
-            <span class="font-bold tracking-widest">03</span>
-            <span class="tracking-widest"><a href="./technology-vehicle.html">technology</a></span>
+          <li class="uppercase relative">
+
+            <span class="tracking-widest">
+              <a class="group nav-links w-full" href="/public/technology-vehicle.html">
+                <span class="font-bold tracking-widest mr-[0.5rem]">03</span>
+                technology
+                <span class="navigation-underline"></span>
+              </a>
+            </span>
           </li>
         </ul>
       </div>
       <!-- end of hidden nav with links -->
     </nav>
   </header>
+
   <main>
-    <section class="">
+    <section class="pb-8">
       <div>
-        <p class="text-white text-center text-lg uppercase my-4 pb-8 tracking-widest sm:text-start sm:ml-20 sm:mt-8 sm:text-xl ">
+        <p
+          class="text-white text-center text-lg uppercase my-4 pb-8 tracking-widest sm:text-start sm:ml-20 sm:mt-8 sm:text-xl ">
           <span class="inline-block mr-4 text-tertiary font-bold">02</span>
           Meet your crew
         </p>
-       <div class="crew-data">
-        <div class="pre-pag"></div>
+        <div class="crew-data md:flex md:items-center md:justify-around md:gap-8 lg:justify-center  ">
 
-        <div class="flex justify-center pt-8 gap-4 mb-8">
-          <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
-          <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
-          <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
-          <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
+          <div class=" md:flex md:flex-col md:p-8 lg:py-20 ">
+
+            <div class="pre-pag"></div>
+            <div class="flex justify-center pt-8 gap-4 mb-8 md:justify-start md:mt-auto md:mb-0 ">
+              <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
+              <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
+              <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
+              <div class="crew-pagination w-[0.7rem] h-[0.7rem] bg-fourth rounded-full"></div>
+            </div>
+
+          </div>
+
+          <div class="post-pag "></div>
+
         </div>
-        <div class="post-pag"></div>
-
-       </div>
       </div>
     </section>
   </main>

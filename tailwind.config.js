@@ -38,6 +38,9 @@ module.exports = {
       },
       screens:{
         smallTab:'430px',
+        smallDesk:'840px',
+        midDesk:"1055px",
+        largeDesk:"1100px",
       },
     },
   },

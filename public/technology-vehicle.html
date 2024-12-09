@@ -17,45 +17,75 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body class="bg-TechnologyMob sm:bg-TechnologyTab bg-no-repeat min-h-screen bg-cover bg-fixed">
+<body class="bg-TechnologyMob sm:bg-TechnologyTab md:bg-TechnologyDes bg-no-repeat min-h-screen bg-cover bg-fixed">
   <header class="mt-4 mb-6 sm:mt-0  ">
-    <nav class=" relative sm:flex sm:justify-center sm:items-center ">
+    <nav class="shared-nav">
       <!-- nav we can see -->
       <div class="flex justify-between px-6">
         <div class="h-10 w-10">
-          <img src="../assets/shared/logo.svg" alt="Home">
+          <a href="/index.html">
+            <img src="/assets/shared/logo.svg" alt="Home">
+          </a>
         </div>
         <button class="hamburger-btn sm:hidden">
-          <img src="../assets/shared/icon-hamburger.svg" alt="">
+          <img src="/assets/shared/icon-hamburger.svg" alt="">
         </button>
       </div>
       <!-- end of nav we can see -->
+      <!-- white line separator -->
+      <div class="h-[1px] relative z-40 -mr-5 bg-tertiary basis-2/4 hidden md:block text-white">
 
+      </div>
+      <!-- end of white line separator -->
       <!-- nav that is hidden that has links -->
-      <div class=" side-panel shared-side-panel bg-[#181a25]">
+      <div class="side-panel shared-side-panel sm:bg-[#181a25] md:bg-transparent md:backdrop-blur-3xl ">
         <div class="flex mb-12 sm:hidden ">
 
           <button class="close-btn ml-[auto] ">
-            <img src="../assets/shared/icon-close.svg" alt="">
+            <img src="/assets/shared/icon-close.svg" alt="">
           </button>
         </div>
 
-        <ul class="flex flex-col gap-4 text-white sm:flex-row flex-wrap">
-          <li class="uppercase flex  gap-4 sm:gap-2">
-            <span class="font-bold tracking-widest smallTab:hidden">00</span>
-            <span class="tracking-widest"><a href="/index.html">home</a></span>
+        <ul class="shared-ul">
+          <li class="uppercase relative  ">
+            <span class="tracking-widest  ">
+              <a class="group nav-links  " href="/index.html">
+                <span class="font-bold tracking-widest smallTab:hidden mr-[0.5rem]">00</span>
+                home
+                <span class="navigation-underline"></span>
+              </a>
+            </span>
           </li>
-          <li class="uppercase flex gap-4 sm:gap-2">
-            <span class="font-bold tracking-widest">01</span>
-            <span class="tracking-widest"><a href="./destination-moon.html">destination</a></span>
+
+          <li class="uppercase relative">
+
+            <span class="tracking-widest">
+              <a class="group nav-links w-full" href="/public/destination-moon.html">
+                <span class="font-bold tracking-widest mr-[0.5rem]">01</span>
+                destination
+                <span class="navigation-underline"></span>
+              </a>
+            </span>
           </li>
-          <li class="uppercase flex gap-4 sm:gap-2">
-            <span class="font-bold tracking-widest">02</span>
-            <span class="tracking-widest"><a href="./crew-commander.html">crew</a></span>
+          <li class="uppercase relative">
+
+            <span class="tracking-widest">
+              <a class="group nav-links w-full" href="/public/crew-commander.html">
+                <span class="font-bold tracking-widest mr-[0.5rem]">02</span>
+                crew
+                <span class="navigation-underline"></span>
+              </a>
+            </span>
           </li>
-          <li class="uppercase flex gap-4 sm:gap-2">
-            <span class="font-bold tracking-widest">03</span>
-            <span class="tracking-widest"><a href="./technology-vehicle.html">technology</a></span>
+          <li class="uppercase relative">
+
+            <span class="tracking-widest">
+              <a class="group nav-links w-full" href="/public/technology-vehicle.html">
+                <span class="font-bold tracking-widest mr-[0.5rem]">03</span>
+                technology
+                <span class="navigation-underline"></span>
+              </a>
+            </span>
           </li>
         </ul>
       </div>
@@ -66,22 +96,27 @@
   <main>
     <section>
       <div>
-        <p class="text-white text-center text-xl uppercase my-8 sm:my-4 sm:text-start sm:ml-20 sm:mt-8 sm:text-2xl md:my-16 "> <span
-            class="inline-block mr-4 text-tertiary">03</span>Space launch 101</p>
+        <p class="text-white text-center text-xl uppercase my-8 sm:my-4 sm:text-start sm:ml-20 sm:mt-8 sm:text-2xl md:my-16 md:text-3xl tracking-widest "> <span
+            class="inline-block mr-4 text-tertiary font-bold">03</span>Space launch 101</p>
 
-        <div class="flex gap-5 sm:gap-4 flex-col items-center">
+        <div class="flex gap-5 sm:gap-4 flex-col items-center md:flex-row md:gap-0 justify-end md:my-8 ">
 
-          <div class="tech-pic sm:h-[20rem] w-full  ">
+          <div class="tech-pic sm:h-[20rem] w-full md:order-1 md:w-auto md:h-[25rem] lg:h-[35rem] ">
           </div>
 
-          <div class="flex  justify-center gap-4 ">
-            <div class="tech-pagination h-10 w-10 rounded-full bg-transparent flex justify-center border-solid border-[1px] hover:border-white transition duration-300 ease-in-out border-tertiary  text-white items-center">1</div>
-            <div class="tech-pagination h-10 w-10 rounded-full bg-transparent flex justify-center border-solid border-[1px] hover:border-white transition duration-300 ease-in-out border-tertiary  text-white items-center">2</div>
-            <div class="tech-pagination h-10 w-10 rounded-full bg-transparent flex justify-center border-solid border-[1px] hover:border-white transition duration-300 ease-in-out border-tertiary  text-white items-center">3</div>
+         <div class="md:-order-1 md:flex md:justify-center md:gap-4 lg:gap-8
+          lg:basis-3/6 md:items-center">
+
+          <div class="flex  justify-center gap-4 md:flex-col ">
+            <div class="tech-pagination h-10 w-10 md:h-16 md:w-16 lg:h-24 lg:w-24 rounded-full bg-transparent flex justify-center border-solid border-[1px] hover:border-white transition duration-300 ease-in-out border-tertiary  text-white items-center font-serif md:text-2xl">1</div>
+            <div class="tech-pagination h-10 w-10 md:h-16 md:w-16 lg:h-24 lg:w-24 rounded-full bg-transparent flex justify-center border-solid border-[1px] hover:border-white transition duration-300 ease-in-out border-tertiary  text-white items-center font-serif md:text-2xl">2</div>
+            <div class="tech-pagination h-10 w-10 md:h-16 md:w-16 lg:h-24 lg:w-24 rounded-full bg-transparent flex justify-center border-solid border-[1px] hover:border-white transition duration-300 ease-in-out border-tertiary  text-white items-center font-serif md:text-2xl">3</div>
           </div>
           <div class="tech-info my-5 flex gap-4 flex-col">
-           
           </div>
+
+         </div>
+
         </div>
 
 
