@@ -1218,7 +1218,7 @@ video {
 }
 
 .bg-HomeMob {
-  background-image: url('/space-tourism-website-main/assets/home/background-home-mobile.jpg');
+  background-image: url('/assets/home/background-home-mobile.jpg');
 }
 
 .bg-TechnologyMob {
@@ -1501,7 +1501,7 @@ video {
   }
 
   .sm\:bg-HomeTab {
-    background-image: url('/space-tourism-website-main/assets/home/background-home-tablet.jpg');
+    background-image: url('/assets/home/background-home-tablet.jpg');
   }
 
   .sm\:bg-TechnologyTab {
@@ -1685,7 +1685,7 @@ video {
   }
 
   .md\:bg-HomeDes {
-    background-image: url('/space-tourism-website-main/assets/home/background-home-desktop.jpg');
+    background-image: url('/Space-tourism-website/assets/home/background-home-desktop.jpg');
   }
 
   .md\:bg-TechnologyDes {

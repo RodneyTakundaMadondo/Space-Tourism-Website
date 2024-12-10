@@ -10,9 +10,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        HomeDes:"url('/space-tourism-website-main/assets/home/background-home-desktop.jpg')",//space-tourism-website-main/assets/destination/background-destination-desktop.jpg
-        HomeMob:"url('/space-tourism-website-main/assets/home/background-home-mobile.jpg')",
-        HomeTab:"url('/space-tourism-website-main/assets/home/background-home-tablet.jpg')",
+        HomeDes:"url('/Space-tourism-website/assets/home/background-home-desktop.jpg')",//space-tourism-website-main/assets/destination/background-destination-desktop.jpg
+        HomeMob:"url('/assets/home/background-home-mobile.jpg')",
+        HomeTab:"url('/assets/home/background-home-tablet.jpg')",
 
         CrewDes:"url('/assets/crew/background-crew-desktop.jpg')",
         CrewMob:"url('/assets/crew/background-crew-mobile.jpg')",
