@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        HomeDes:"url('/Space-tourism-website/assets/home/background-home-desktop.jpg')",//space-tourism-website-main/assets/destination/background-destination-desktop.jpg
+        HomeDes:"url('/assets/home/background-home-desktop.jpg')",//space-tourism-website-main/assets/destination/background-destination-desktop.jpg
         HomeMob:"url('/assets/home/background-home-mobile.jpg')",
         HomeTab:"url('/assets/home/background-home-tablet.jpg')",
 
